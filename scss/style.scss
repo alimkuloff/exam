@@ -1,0 +1,24 @@
+@import "./instruments/mixin.scss";
+@import "./instruments/variables";
+@import "./blocks/reset";
+@import "./blocks/hero";
+@import "./blocks/search";
+@import "./blocks/works";
+@import "./blocks/clients";
+@import "./blocks/stage";
+@import "./blocks/partners";
+@import "./blocks/workers";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/video";
+
+
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}

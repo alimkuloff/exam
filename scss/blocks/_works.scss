@@ -1,0 +1,80 @@
+@import "../instruments/mixin";
+
+.works{
+    margin-top: 120px;
+    width: 100%;
+
+    &__title{
+        display: block;
+
+        h4{
+            @include title (48px);
+        }
+
+        p{
+            @include subtitle (16px);
+            margin-top: 32px;
+            max-width: 470px;
+        }
+    }
+}
+
+.works__cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:56px ;
+    gap: 30px;
+
+    .work__card{
+        max-width: 393px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+&--title{
+    margin-left: 32px;
+    margin-top: 24px;
+}
+
+        b{
+            @include title(20px)
+        }
+
+        p{
+            @include subtitle (16px);
+            margin-top: 16px;
+            margin-bottom: 32px;
+            max-width: 291px;
+        }
+
+        a{
+            display: inline-block;
+            @include link;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media only screen and (max-width:760px){
+    .works__title{
+        h4{
+            font-size: 44px;
+        }
+    }
+
+    .works__cards{
+        flex-direction: column;
+
+        
+
+        .work__card{
+            max-width: 690px;
+            width: 100%;
+
+            img{
+                width: 100%;
+                max-height: 250px;
+            }
+        }
+    }
+}

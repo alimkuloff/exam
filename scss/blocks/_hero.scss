@@ -1,0 +1,112 @@
+@import "../instruments/_mixin.scss";
+
+.hero{
+    &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 0 10px;
+
+    .herimg{
+        max-width: 100%;
+     }
+    }
+    
+     
+
+    &__title{
+        h2{
+            @include title (52px);
+            max-width: 616px;
+            width: 100%;
+        }
+
+        p{
+            @include subtitle (16px);
+            margin: 40px 0;
+            max-width: 525px;
+        }
+
+    
+    }
+
+    &__link{
+        a{
+           @include link ;
+           font-weight: 700;
+           border-bottom: 3px solid #FFCE50; 
+        }
+    }
+
+    &__cards{
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        width: 100%;
+        margin-top: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+        gap: 0 15px;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        max-width: 228px;
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        margin: 40px 0;
+
+        b{
+            @include title (20px);
+            display: block;
+            margin-top: 24px;
+        }
+
+        p{
+            @include subtitle(16px);
+            margin-top: 16px;
+        }
+
+        
+    }
+
+    
+}
+
+@media only screen and (max-width:760px){
+    .hero__content{
+        flex-direction: column;
+        text-align: center;
+
+        h2{
+            font-size: 44px;
+        }
+    }
+
+    .hero__cards{
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .hero__card{
+        border-radius: 20px;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0 32px;
+        align-items: center;
+        max-width: 690px;
+        min-height: 160px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        img{
+            display: block;
+        }
+
+        
+    }
+
+    
+}
+

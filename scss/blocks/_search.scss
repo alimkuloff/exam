@@ -1,0 +1,42 @@
+@import "../instruments/mixin.scss";
+@import "../instruments/variables";
+
+.search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 67px;
+    
+    .srctruck{
+        max-width: 100%;
+    }
+
+    &__cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 72px;
+        gap: 62px;
+        
+    }
+
+    &__card{
+        display: flex;
+        max-width: 447px;
+        width: 100%;
+        gap: 0 40px;
+    }
+}
+
+.src__title{
+    b{
+       @include title (20px);
+    }
+
+    p{
+        @include subtitle (16px);
+        margin-top: 16px;
+    }
+}

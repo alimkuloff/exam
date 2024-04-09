@@ -1,0 +1,54 @@
+@import "../instruments/mixin";
+
+.footer{
+    max-height: 365px;
+    width: 100%;
+    background-color:#0B7572 ;
+    text-align: center;
+    
+
+    &__wrapper{
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        padding-top: 80px;
+        text-align: left;
+    }
+
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 25px 0;
+
+        a{
+            @include title(13px);
+            color: #FFFFFF;
+            letter-spacing: 3px;
+        }
+    }
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+        gap: 32px 0;
+        
+        a{
+            color: #FFFFFF;
+        }
+
+        .consultation{
+            padding: 8px 12px;
+            background-color:#FF9619;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+    }
+
+    .ftr-end{
+        @include subtitle (12px);
+        letter-spacing: 16%;
+        color: #FFFFFF;
+        margin-top: 80px;
+    }
+}

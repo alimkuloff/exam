@@ -1,0 +1,50 @@
+@import "../instruments/mixin";
+
+.partners{
+    max-width: 100%;
+    margin-top: 120px;
+b{
+    @include title(48px);
+}
+
+    &__cards{
+        margin-top: 90px;
+        display: flex;
+        gap: 80px 0;
+        flex-direction: column;
+
+        .prt__wrapper{
+            display: flex;
+            gap:0 65px;
+            justify-content: center;
+
+            .line{
+                max-height: 183px;  
+                border: 1px solid #D7D7DD;
+            }
+        }
+    }
+
+    &__card{
+        max-width:184px ;
+        width: 100%;
+        text-align: center;
+
+        .prt__logo{
+            height: 100px;
+            
+        }
+
+        b{
+            @include title(20px);
+            display: block;
+            margin-top: 32px
+        }
+
+        p{
+            @include subtitle(14px);
+            margin-top: 14px;
+            text-wrap: nowrap;
+        }
+    }
+}

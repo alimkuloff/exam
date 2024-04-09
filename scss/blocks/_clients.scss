@@ -1,0 +1,32 @@
+@import "../instruments/mixin";
+.clients{
+    display: flex;
+    //flex-wrap: wrap;
+    background-color:#0B7572 ;
+    width: 100%;
+    margin-top: 300px;
+    justify-content: space-between;
+    
+
+    b{
+         @include title(48px);
+         color:#FFFFFF ;
+         margin-top: 100px;
+         margin-left: 81px;
+         
+    }
+
+    img{
+        margin: 85px 60px;
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:760px){
+    .clients{
+        flex-direction: column;
+    }
+}
+
+
